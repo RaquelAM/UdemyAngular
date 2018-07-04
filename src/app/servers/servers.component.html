@@ -1,2 +1,10 @@
+<label>Server Name</label>
+<input type="text" class="form-control" (input)="onUdateServerName($event)">
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">
+	Agregar Servers
+</button>
+<p>{{ allowNewServer }}</p>
+<p [innerText]="allowNewServer" ></p>
+<p>{{ serverCreationStatus }} </p>
 <app-server></app-server>
 <app-server></app-server>
