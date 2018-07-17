@@ -1,5 +1,9 @@
 <label>Server Name</label>
-<input type="text" class="form-control" (input)="onUdateServerName($event)">
+<!--<input type="text" class="form-control" (input)="onUdateServerName($event)">-->
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<!--<p>{{ serverName }}</p>-->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">
 	Agregar Servers
 </button>
